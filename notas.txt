@@ -1,0 +1,13 @@
+
+#Leer
+  https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
+  https://docs.npmjs.com/cli/v10/using-npm/developers
+  https://docs.npmjs.com/cli/v10/commands/npm-adduser
+
+  https://www.youtube.com/watch?v=SgmkNLFFCjM
+
+  Cambio Engines de array a objeto
+
+----
+
+npm publish --access public
