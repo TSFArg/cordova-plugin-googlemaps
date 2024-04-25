@@ -14,3 +14,7 @@ so is no longer available for the plugin to use.
 
 3.0.5 - Cambio el ID en plugin.xml  (le agrego @chacabuk)
 <plugin id="@chacabuk/cordova-plugin-googlemaps"
+
+
+3.0.6 - Cambio el ID en plugin.xml  (le quito @chacabuk)
+<plugin id="cordova-plugin-googlemaps"
