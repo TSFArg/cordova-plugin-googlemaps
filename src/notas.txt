@@ -10,3 +10,7 @@ so is no longer available for the plugin to use.
 3.0.4 - Cambio en package.json el ID. (le agrego @chacabuk)
 "cordova": {
     "id": "@chacabuk/cordova-plugin-googlemaps",
+
+
+3.0.5 - Cambio el ID en plugin.xml  (le agrego @chacabuk)
+<plugin id="@chacabuk/cordova-plugin-googlemaps"
