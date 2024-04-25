@@ -413,3 +413,4 @@ This means **you can use the native Google Maps views similar to HTML elements**
 - Gitter : (managed by @Hirbod)
 
   https://gitter.im/nightstomp/cordova-plugin-googlemaps
+
