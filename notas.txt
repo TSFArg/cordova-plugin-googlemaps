@@ -10,4 +10,16 @@
 
 ----
 
+
+Por un lado, subir a github todas las veces que quira.
+Luego, para publicar en NPM: Subir la version en todos lados y ejecutar:
 npm publish --access public
+
+Para instalar el paquete en las app:
+
+  npm install @chacabuk/ionic-native-core @chacabuk/ionic-native-google-maps
+  ionic cordova plugin add @chacabuk/cordova-plugin-googlemaps@latest
+
+
+    IMPORTANTE: El mapa NO PUEDE ESTAR dentro de un <ion-content> con color!!! (pe. color="light") 
+    Para poder poner un color de fondo, estoy poniendo el div del mapa fuera del content.  
