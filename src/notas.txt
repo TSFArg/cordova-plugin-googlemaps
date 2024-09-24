@@ -18,3 +18,8 @@ so is no longer available for the plugin to use.
 
 3.0.6 - Cambio el ID en plugin.xml  (le quito @chacabuk)
 <plugin id="cordova-plugin-googlemaps"
+
+
+3.0.7 - Agrego la dependencia a volley:1.2.1 en el custom.gredle
+implementation 'com.android.volley:volley:1.2.1'
+
