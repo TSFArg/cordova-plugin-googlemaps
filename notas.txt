@@ -12,7 +12,7 @@
 
 
 Por un lado, subir a github todas las veces que quira.
-Luego, para publicar en NPM: Subir la version en todos lados y ejecutar:
+Luego, para publicar en NPM: Subir en numero de version en todos lados (son 3 o 4) y ejecutar:
 npm publish --access public
 
 Para instalar el paquete en las app:
