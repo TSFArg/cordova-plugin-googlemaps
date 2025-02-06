@@ -23,3 +23,25 @@ Para instalar el paquete en las app:
 
     IMPORTANTE: El mapa NO PUEDE ESTAR dentro de un <ion-content> con color!!! (pe. color="light") 
     Para poder poner un color de fondo, estoy poniendo el div del mapa fuera del content.  
+
+
+
+IMPORTANTE: para que AppFlow use el paquete
+  
+  Agregar en package.json
+
+        "devDependencies": {
+            ....
+            "cordova-plugin-googlemaps": "@chacabuk/cordova-plugin-googlemaps"
+
+        "cordova": {
+            "plugins": {
+                ....
+                "cordova-plugin-googlemaps": {}
+
+  --------------
+
+  Agregar en config.xml
+    
+        <plugin name="cordova-plugin-googlemaps" spec="@chacabuk/cordova-plugin-googlemaps" /> 
+
