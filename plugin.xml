@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-googlemaps" version="3.0.10" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-googlemaps" version="3.0.11" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
   <name>cordova-plugin-googlemaps</name>
   <js-module name="Promise" src="www/Promise.js" />
   <js-module name="BaseClass" src="www/BaseClass.js">
@@ -80,12 +80,12 @@
   <js-module name="MapTypeId" src="www/MapTypeId.js">
     <runs/>
   </js-module>
-  <js-module name="KmlOverlay" src="www/KmlOverlay.js">
+  <!-- <js-module name="KmlOverlay" src="www/KmlOverlay.js">
     <runs/>
   </js-module>
   <js-module name="KmlLoader" src="www/KmlLoader.js">
     <runs/>
-  </js-module>
+  </js-module> -->
   <js-module name="Environment" src="www/Environment.js">
     <runs/>
   </js-module>
@@ -140,7 +140,7 @@
   <platform name="android">
     <info>
 
-      VERSION: 3.0.10
+      VERSION: 3.0.11
 
     </info>
 
@@ -228,7 +228,7 @@
     <source-file src="src/android/plugin/google/maps/PluginDirectionsService.java" target-dir="src/plugin/google/maps"/>
     <source-file src="src/android/plugin/google/maps/PluginLocationService.java" target-dir="src/plugin/google/maps"/>
     <source-file src="src/android/plugin/google/maps/PluginGroundOverlay.java" target-dir="src/plugin/google/maps"/>
-    <source-file src="src/android/plugin/google/maps/PluginKmlOverlay.java" target-dir="src/plugin/google/maps"/>
+    <!-- <source-file src="src/android/plugin/google/maps/PluginKmlOverlay.java" target-dir="src/plugin/google/maps"/> -->
     <source-file src="src/android/plugin/google/maps/PluginMap.java" target-dir="src/plugin/google/maps"/>
     <source-file src="src/android/plugin/google/maps/PluginMarker.java" target-dir="src/plugin/google/maps"/>
     <source-file src="src/android/plugin/google/maps/PluginPolygon.java" target-dir="src/plugin/google/maps"/>
