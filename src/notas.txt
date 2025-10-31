@@ -29,6 +29,24 @@ import android.support.annotation.NonNull; -> import androidx.annotation.NonNull
 import android.support.v4.content.PermissionChecker; ->  import androidx.core.content.PermissionChecker;
 import android.support.v4.util.LruCache; -> import androidx.collection.LruCache;
 
+3.0.9 - correcciones para paginas de 16 KB
+    <!-- for this plugin -->
+    -  <preference name="android-minSdkVersion" value="19"/>
+    +      <!-- No forzar minSdk desde el plugin (dejá que lo defina la app) -->
+    +      <!-- <preference name="android-minSdkVersion" value="22"/> -->      
+  
+  ----------
 
+    - <framework src="src/android/frameworks/tbxml-android.gradle" custom="true" type="gradleReference"/>
+    - <resource-file src="src/android/frameworks/tbxml-android.aar" target="libs/tbxml-android.aar"/>
+    - <resource-file src="src/android/frameworks/tbxml-android.aar" target="app/src/libs/tbxml-android.aar"/>
+    + <!-- TBXML eliminado: evita empaquetar libtbxml.so -->
 
+    <framework src="src/android/frameworks/pgm-custom.gradle" custom="true" type="gradleReference"/>
+
+    +    <!-- Fuerza versiones modernas de Google Play Services (ELF 16 KB) -->
+    +    <framework src="com.google.android.gms:play-services-maps:19.0.0" />
+    +    <framework src="com.google.android.gms:play-services-location:21.3.0" />    
+
+------------------------------------------------
 
