@@ -157,7 +157,8 @@
       <preference name="BackgroundColor" value="0"/> <!-- TODO: Quitar esta linea -->
 
       <!-- for this plugin -->
-      <preference name="android-minSdkVersion" value="19"/>
++      <!-- No forzar minSdk desde el plugin (dejá que lo defina la app) -->
++      <!-- <preference name="android-minSdkVersion" value="22"/> -->      
     </config-file>
 
     <config-file target="res/xml/config.xml" parent="/*">
@@ -243,12 +244,12 @@
     <source-file src="src/android/plugin/google/maps/PluginStreetViewPanorama.java" target-dir="src/plugin/google/maps"/>
     <source-file src="src/android/plugin/google/maps/IPluginView.java" target-dir="src/plugin/google/maps"/>
 
-    <framework src="src/android/frameworks/tbxml-android.gradle" custom="true" type="gradleReference"/>
-    <resource-file src="src/android/frameworks/tbxml-android.aar" target="libs/tbxml-android.aar"/>
-    <resource-file src="src/android/frameworks/tbxml-android.aar" target="app/src/libs/tbxml-android.aar"/>
-
+    <!-- TBXML eliminado: evita empaquetar libtbxml.so -->
 
     <framework src="src/android/frameworks/pgm-custom.gradle" custom="true" type="gradleReference"/>
++    <!-- Fuerza versiones modernas de Google Play Services (ELF 16 KB) -->
++    <framework src="com.google.android.gms:play-services-maps:19.0.0" />
++    <framework src="com.google.android.gms:play-services-location:21.3.0" />    
 
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <meta-data android:name="com.google.android.geo.API_KEY" android:value="${GOOGLE_MAPS_ANDROID_API_KEY}"/>
