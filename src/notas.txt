@@ -50,3 +50,10 @@ import android.support.v4.util.LruCache; -> import androidx.collection.LruCache;
 
 ------------------------------------------------
 
+3.0.10 -- Quito PluginKml
+      del archivo plugin.xml quito:
+
+      <feature name="PluginKmlOverlay">
+        <param name="android-package" value="plugin.google.maps.PluginKmlOverlay"/>
+      </feature>
+------------------------------------------------      
